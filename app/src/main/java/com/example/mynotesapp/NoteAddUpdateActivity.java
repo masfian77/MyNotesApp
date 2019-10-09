@@ -32,6 +32,7 @@ import static com.example.mynotesapp.db.DatabaseContract.NoteColumns.CONTENT_URI
 import static java.util.Calendar.DATE;
 
 public class NoteAddUpdateActivity extends AppCompatActivity implements View.OnClickListener {
+
     private EditText edtTitle, edtDescription;
     private Button btnSubmit;
 
