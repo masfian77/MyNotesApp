@@ -3,8 +3,6 @@ package com.example.consumerapp.helper;
 import android.database.Cursor;
 
 import com.example.consumerapp.entity.Note;
-import com.example.mynotesapp.entity.Note;
-
 import java.util.ArrayList;
 
 import static android.provider.BaseColumns._ID;
