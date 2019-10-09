@@ -1,8 +1,5 @@
 package com.example.mynotesapp;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -16,6 +13,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mynotesapp.db.NoteHelper;
 import com.example.mynotesapp.entity.Note;
@@ -203,8 +203,8 @@ public class NoteAddUpdateActivity extends AppCompatActivity implements View.OnC
                             getContentResolver().delete(uriWithId, null, null);
                             Toast.makeText(NoteAddUpdateActivity.this, "Satu item berhasil dihapus", Toast.LENGTH_SHORT).show();
                             finish();
-                            }
                         }
+                    }
                 })
                 .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {

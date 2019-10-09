@@ -1,9 +1,5 @@
 package com.example.mynotesapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Context;
 import android.content.Intent;
 import android.database.ContentObserver;
@@ -15,9 +11,12 @@ import android.os.HandlerThread;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.mynotesapp.adapter.NoteAdapter;
 import com.example.mynotesapp.db.DatabaseContract;
-import com.example.mynotesapp.db.NoteHelper;
 import com.example.mynotesapp.entity.Note;
 import com.example.mynotesapp.helper.MappingHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

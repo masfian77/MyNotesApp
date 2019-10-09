@@ -7,7 +7,6 @@ import android.database.Cursor;
 import android.net.Uri;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import com.example.mynotesapp.db.NoteHelper;
 

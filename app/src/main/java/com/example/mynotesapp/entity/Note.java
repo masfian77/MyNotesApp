@@ -9,7 +9,6 @@ public class Note implements Parcelable {
     private String description;
     private String date;
 
-    //constructor
     public Note(int id, String title, String description, String date) {
         this.id = id;
         this.title = title;
@@ -17,7 +16,6 @@ public class Note implements Parcelable {
         this.date = date;
     }
 
-    //getter and setter
     public int getId() {
         return id;
     }
