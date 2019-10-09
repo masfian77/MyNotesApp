@@ -17,9 +17,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mynotesapp.db.NoteHelper;
-import com.example.mynotesapp.entity.Note;
-import com.example.mynotesapp.helper.MappingHelper;
+import com.example.consumerapp.entity.Note;
+import com.example.consumerapp.helper.MappingHelper;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -28,7 +27,7 @@ import java.util.Locale;
 
 import static android.provider.MediaStore.Files.FileColumns.TITLE;
 import static android.provider.MediaStore.Images.ImageColumns.DESCRIPTION;
-import static com.example.mynotesapp.db.DatabaseContract.NoteColumns.CONTENT_URI;
+import static com.example.consumerapp.db.DatabaseContract.NoteColumns.CONTENT_URI;
 import static java.util.Calendar.DATE;
 
 public class NoteAddUpdateActivity extends AppCompatActivity implements View.OnClickListener {
@@ -40,7 +39,6 @@ public class NoteAddUpdateActivity extends AppCompatActivity implements View.OnC
     private Note note;
     private int position;
     private Uri uriWithId;
-    private NoteHelper noteHelper;
 
     public static final String EXTRA_NOTE = "extra_note";
     public static final String EXTRA_POSITION = "extra_position";
@@ -61,7 +59,6 @@ public class NoteAddUpdateActivity extends AppCompatActivity implements View.OnC
         edtDescription = findViewById(R.id.edt_description);
         btnSubmit = findViewById(R.id.btn_submit);
 
-        noteHelper = NoteHelper.getInstance(getApplicationContext());
 
         note = getIntent().getParcelableExtra(EXTRA_NOTE);
         if (note != null) {
